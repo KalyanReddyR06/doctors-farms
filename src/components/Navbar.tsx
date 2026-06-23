@@ -66,12 +66,14 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <a
-            href="/contact"
-            className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-brand-500/30 transition hover:bg-brand-700"
-          >
-            Book now
-          </a>
+          <NavLink
+to="/contact"
+className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-brand-500/30 transition hover:bg-brand-700"
+
+>
+
+Book now </NavLink>
+
           <button
             type="button"
             className={`md:hidden rounded-full p-2 text-slate-600 hover:bg-slate-100 transition-colors ${

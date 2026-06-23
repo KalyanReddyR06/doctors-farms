@@ -2,16 +2,17 @@ import { useState } from 'react';
 import ImageLightbox from '../components/ImageLightbox';
 
 const galleryImages = [
-  "/gallery-1.jpg",
-  "/gallery-2.jpeg",
-  "/gallery-3.jpg",
-  "/gallery-4.jpg",
-  "/gallery-5.jpg",
-  "/gallery-6.jpeg",
-  "/pool-photo.jpg",
-  "/gallery-7.jpeg",
-  "/gallery-photo.jpg",
+`${import.meta.env.BASE_URL}gallery-1.jpg`,
+`${import.meta.env.BASE_URL}gallery-2.jpeg`,
+`${import.meta.env.BASE_URL}gallery-3.jpg`,
+`${import.meta.env.BASE_URL}gallery-4.jpg`,
+`${import.meta.env.BASE_URL}gallery-5.jpg`,
+`${import.meta.env.BASE_URL}gallery-6.jpeg`,
+`${import.meta.env.BASE_URL}pool-photo.jpg`,
+`${import.meta.env.BASE_URL}gallery-7.jpeg`,
+`${import.meta.env.BASE_URL}gallery-photo.jpg`,
 ];
+
 
 export default function Gallery() {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
